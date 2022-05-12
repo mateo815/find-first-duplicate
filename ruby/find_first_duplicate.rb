@@ -1,5 +1,14 @@
 def find_first_duplicate(arr)
-  # type your code in here
+  # type your code here
+  newArr = Set.new
+
+  arr.each do |val|
+    return val if newArr.include?(val)
+
+    newArr.add(value)
+  end
+
+  -1
 end
 
 if __FILE__ == $PROGRAM_NAME
