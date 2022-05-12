@@ -1,9 +1,10 @@
+require 'set'
+
 def find_first_duplicate(arr)
-  # type your code here
   newArr = Set.new
 
-  arr.each do |val|
-    return val if newArr.include?(val)
+  arr.each do |value|
+    return value if newArr.include?(value)
 
     newArr.add(value)
   end
